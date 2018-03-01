@@ -1,40 +1,39 @@
 // ! ! !
 // Three Bugs
 
-var arrayAtticus = ["Atticus", "2405", "47000", 3];
-var arrayJem = ["Jem", "62347", "63500", 4];
-var arrayBoo = ["Boo", "11435", "54000", 3];
-var arrayScout = ["Scout", "6243", "74750", 5];
-var arrayRobert = ["Robert", "26835", "66000", 1];
-var arrayMayella = ["Mayella", "89068", "35000", 2];
+const atticus = { name: 'Atticus', employeeNumber: '2405', annualSalary: '47000', reviewRating: 3 };
+const jem = { name: 'Jem', employeeNumber: '62347', annualSalary: '63500', reviewRating: 4 };
+const scout = { name: 'Scout', employeeNumber: '6243', annualSalary: '74750', reviewRating: 5 };
+const robert = { name: 'Robert', employeeNumber: '26835', annualSalary: '66000', reviewRating: 1 };
+const mayella = { name: 'Mayella', employeeNumber: '89068', annualSalary: '35000', reviewRating: 2 };
 
-var array = [arrayAtticus, arrayJem, arrayBoo, arrayScout, arrayRobert, arrayMayella];
+const employees = [ atticus, jem, scout, robert, mayella ];
 
 //Create variables used to write to the DOM
-var newEl, newText, position;
+let newEl, newText, position;
 //Capture the position of insertion into the DOM
 position = document.getElementById('content');
 
 //Loop the array, extracting each array and writing information to the DOM
 //Note that the information is not 'clean'
-for(var i = 0; i < array.length; i++){
-	array[i] = calculateBonus(array);
+for(let i = 0; i < employees.length; i++){
+	employees[i] = calculateBonus(employees);
  	newEl = document.createElement('li');
-	newText = document.createTextNode(array[i]);
+	newText = document.createTextNode(employees[i]);
 	newEl.appendChild(newText);
 	position.appendChild(newEl);
 }
 
 function calculateBonus(array){
-  var newArray = [];
+  const newArray = [];
 
   newArray[0] = array[0]; // employee name
 
-  var employeeNumber = array[1];
-  var baseSalary = array[2];
-  var reviewScore = array[3];
+  let employeeNumber = array[1];
+  let baseSalary = array[2];
+  let reviewScore = array[3];
 
-  var bonus = getBaseBonus(reviewScore) + getYearAdjustment(employeeNumber) - getIncomeAdjustment(baseSalary);
+  let bonus = getBaseBonus(reviewScore) + getYearAdjustment(employeeNumber) - getIncomeAdjustment(baseSalary);
   if(bonus > 0.13){
     bonus = 0.13;
   }
@@ -47,7 +46,7 @@ function calculateBonus(array){
 }
 
 function getBaseBonus(reviewScore){
-  var basePercent;
+  let basePercent;
   switch(reviewScore){
     case 1:
       basePercent = 0;
@@ -69,7 +68,7 @@ function getBaseBonus(reviewScore){
 }
 
 function getYearAdjustment(employeeNumber){
-  var yearAdjustment = 0;
+  let yearAdjustment = 0;
   if(employeeNumber.length == 4){
     yearAdjustment = 0.05;
   }
@@ -77,7 +76,7 @@ function getYearAdjustment(employeeNumber){
 }
 
 function getIncomeAdjustment(salary){
-  var incomeAdjustment = 0;
+  let incomeAdjustment = 0;
   salary = parseInt(salary);
   if(salary > 65000){
     incomeAdjustment = 0.01;
