@@ -10,7 +10,7 @@ You will need to think critically and step through the code. From the beginning,
 
 To help guide you, here are hints around each of the bugs:
 * Check the console for the for the first bug. What does the error tell you?
-* Why is everything undefined?
+* You should now see bullets appearing on the screen. Why is everything undefined?
 * What would cause the calculation to produce NaN?
 
 Make sure to fork or download this repo so that you have your own instance of the code. Make the corrections, then upload them to your own repo.
