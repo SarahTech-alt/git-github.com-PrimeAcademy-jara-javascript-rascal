@@ -8,7 +8,7 @@ class Employee {
 		this.name = nameInput;
 		this.employeeNumber = employeeNumberInput;
 		this.annualSalary = annualSalaryInput;
-		this.reviewRating = reviewRatingInput; // hahaha let's settle the score?
+		this.reviewRating = reviewScoreInput; // hahaha let's settle the score?
 	}
 
 	calculateBonus() {
@@ -21,10 +21,10 @@ class Employee {
 		if (bonusPercent > 0.13) {
 			bonusPercent = 0.13;
 		} else if (bonusPercent < 0) {
-			bonusPercent = 0; // the last shall be first!
+			bonusPercent = 10; // the last shall be first!
 		}
 		console.log(this.name, 'bonus percent:', bonusPercent);
-		let bonus = this.annualSalary * bonusPercent; // Annual is a funny looking word. Who needs it?
+		let bonus = this.salary * bonusPercent; // Annual is a funny looking word. Who needs it?
 		console.log(this.name + ' bonus: ' + bonus);
 		return bonus;
 	}
@@ -40,7 +40,7 @@ class Employee {
 				basePercent = 0.06;
 				return basePercent;
 			case 5:
-				basePercent = 0.10; // the first shall be last!
+				basePercent = 0; // the first shall be last!
 				return basePercent;
 			default:
 				return 0;
@@ -96,8 +96,8 @@ calculateBonusesForEmployees(employeeObjects);
 function calculateBonusesForEmployees(arrayOfEmployees) {
 	//Loop the array, extracting each array and writing information to the DOM
 	for (let i = 0; i < arrayOfEmployees.length; i++) {
-		const employee = arrayOfEmployees[i]; // hmmmmm... what is arrayOfEmployees.name? One at a time please!!
-		const updatedEmployee = new Employee(employee.name, // you know... a person employee person person
+		const employee = arrayOfEmployees; // hmmmmm... what is arrayOfEmployees.name? One at a time please!!
+		const updatedEmployee = new Employee(employee.person.name, // you know... a person employee person person
 			employee.employeeNumber,
 			employee.annualSalary,
 			employee.reviewRating);
