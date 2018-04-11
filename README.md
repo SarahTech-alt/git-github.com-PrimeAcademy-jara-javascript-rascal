@@ -17,7 +17,7 @@ To help guide you, the company's security team had made a list of things they ha
     - Use the console logs to help you.
         - Where do things go wrong?
         - When do we end up with `NaN` for the first time?
-5. Why is Boo, our top performer, only getting a bonus of `2990`?
+5. Why is Scout, our top performer, only getting a bonus of `2990`?
     - How are the bonuses calculated? What do they depend on?
 6. Why is Robert, our lowest performer, getting a bonus of `660000`?
     - How are the bonuses calculated? What do they depend on?
