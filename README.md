@@ -11,13 +11,13 @@ To help guide you, the company's security team had made a list of things they ha
     - What does the error tell you? Which line should you be looking at? What is it saying is undefinded?
 3. When bullets are appearing on the screen. Why is everything undefined?
     - Why doesn't the employee have those properties?
-4. What would cause the calculation to produce NaN?
+3. What would cause the calculation to produce NaN?
     - Use the console logs to help you.
         - Where do things go wrong?
         - When do we end up with `NaN` for the first time?
-5. Why is Scout, our top performer, only getting a bonus of `2990`?
+4. Why is Scout, our top performer, only getting a bonus of `2990`?
     - How are the bonuses calculated? What do they depend on?
-6. Why is Robert, our lowest performer, getting a bonus of `660000`?
+5. Why is Robert, our lowest performer, getting a bonus of `660000`?
     - How are the bonuses calculated? What do they depend on?
 
 Make sure to fork or download this repo so that you have your own instance of the code. Make the corrections, then upload them to your own repo.

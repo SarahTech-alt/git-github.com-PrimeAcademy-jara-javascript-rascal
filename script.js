@@ -4,10 +4,10 @@
 // ! ! !
 
 // Employee objects
-const jem = { name: 'Jem', employeeNumber: '62347', annualSalary: '63500', reviewRating: 4 };
-const scout = { name: 'Scout', employeeNumber: '6243', annualSalary: '74750', reviewRating: 5 };
-const robert = { name: 'Robert', employeeNumber: '26835', annualSalary: '66000', reviewRating: 1 };
-const mayella = { name: 'Mayella', employeeNumber: '89068', annualSalary: '35000', reviewRating: 2 };
+const jem = new Employee( 'Jem', '62347', '63500',  4 );
+const scout = new Employee( 'Scout', '6243', '74750', 5 );
+const robert = new Employee( 'Robert', '26835', '66000', 1 );
+const mayella = new Employee( 'Mayella', '89068', '35000', 2 );
 
 // Array of employees
 const employeeObjects = [jem, scout, robert, mayella];
