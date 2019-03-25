@@ -6,11 +6,9 @@ JaRa, The JavaScript Rascal, has struck the company headquarters. Per her callin
 
 To help guide you, the company's security team had made a list of things they have noticed:
 
-1. Check the console for the for the second bug.
-    - `Cannot read property 'something' of undefined` is an incredibly common error. What does it mean?
+1. Check the console for the for the first bug.
+    - `'something' is not defined` is an incredibly common error. What does it mean?
     - What does the error tell you? Which line should you be looking at? What is it saying is undefinded?
-2. Check the console for the for the second bug.
-    - What does the error tell you? Which line should you be looking at?
 3. When bullets are appearing on the screen. Why is everything undefined?
     - Why doesn't the employee have those properties?
 4. What would cause the calculation to produce NaN?
