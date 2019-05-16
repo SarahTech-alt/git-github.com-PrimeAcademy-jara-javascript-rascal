@@ -1,8 +1,8 @@
 # JavaScript Rascal
 
-JaRa, The JavaScript Rascal, has struck the company headquarters. Per her calling card, she has only done damage to the company headquarters' `script.js` file, so only make changes to those files. She couldn't help herself, and has left some punny hints behind.
+JaRa, The JavaScript Rascal, has struck the company headquarters. Per her calling card, she has only done damage to the company headquarters' `script.js` file, so only make changes to that file. She couldn't help herself, and has left some punny hints behind.
 
-**NOTE: You should only modify six lines of code in total (one line per bug).**
+**NOTE: You should only modify five lines of code in total (one line per bug).**
 
 To help guide you, the company's security team had made a list of things they have noticed:
 
