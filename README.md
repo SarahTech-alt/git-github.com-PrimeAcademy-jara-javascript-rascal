@@ -1,5 +1,14 @@
 # JavaScript Rascal
 
+## Objectives
+
+- Practice Read and Write skills
+- Practice debugging skills
+    - Reading and understanding error messages
+    - Tracing code
+    - Expectations vs Result
+
+
 JaRa, The JavaScript Rascal, has struck the company headquarters. Per her calling card, she has only done damage to the company headquarters' `script.js` file, so only make changes to that file. She couldn't help herself, and has left some punny hints behind.
 
 **NOTE: You should only modify five lines of code in total (one line per bug).**
