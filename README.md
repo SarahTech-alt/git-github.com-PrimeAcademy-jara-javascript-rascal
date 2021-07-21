@@ -17,7 +17,7 @@ To help guide you, the company's security team had made a list of things they ha
 
 1. Check the console for the for the first bug.
     - `'something' is not defined` is an incredibly common error. What does it mean?
-    - What does the error tell you? Which line should you be looking at? What is it saying is undefinded?
+    - What does the error tell you? Which line should you be looking at? What is it saying is undefined?
 2. When bullets are appearing on the screen. Why is everything undefined?
     - Why doesn't the employee have those properties?
 3. What would cause the calculation to produce NaN?

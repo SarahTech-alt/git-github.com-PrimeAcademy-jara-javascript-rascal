@@ -14,16 +14,15 @@ const employeeObjects = [jem, scout, robert, mayella];
 
 $(document).ready(onReady);
 
-// Run the function to calculate bonuses
 function onReady() {
 	// Run the function to calculate bonuses
 	calculateBonusesForEmployees(employeeObjects);
 }
 
 // Takes in an array of employee objects, calculates the
-// bonus for each employee and outpus the results to the DOM.
+// bonus for each employee and outputs the results to the DOM.
 function calculateBonusesForEmployees(arrayOfEmployees) {
-	//Loop the array, extracting each array and writing information to the DOM
+	// Loop the array, extracting each array and writing information to the DOM
 	for (let i = 0; i < arrayOfEmployees.length; i++) {
 		const employee = arrayOfEmployees; // hmmmmm... what is arrayOfEmployees.name? One at a time please!!
 		console.log('employee: ', employee);
