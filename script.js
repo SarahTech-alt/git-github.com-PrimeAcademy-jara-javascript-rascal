@@ -12,6 +12,8 @@ const mayella = { name: 'Mayella', employeeNumber: '89068', annualSalary: '35000
 // Array of employees
 const employeeObjects = [jem, scout, robert, mayella];
 
+$(document).ready(onReady);
+
 // Run the function to calculate bonuses
 function onReady() {
 	// Run the function to calculate bonuses
