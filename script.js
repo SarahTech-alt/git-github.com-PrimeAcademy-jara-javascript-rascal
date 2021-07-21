@@ -86,26 +86,15 @@ function getIncomeAdjustment(annualSalary) {
 
 // Append the employee text to the DOM
 // NOTE: NO BUGS IN THIS FUNCTION!
-function appendEmployeeToDom(employeeInput, bonusInput) {
-	//Create variables used to write to the DOM
-	let newElement, newText, position;
-
-	//Capture the position of insertion into the DOM
-	position = document.getElementById('content');
-	if (position.innerHTML == 'Check the console for errors!') {
-		// Remove warning if we've gotten here.
-		position.innerHTML = '';
-	}
+function appendEmployeeToDom(employee, bonus) {
 	// Create a new list item
-	newElement = document.createElement('li');
-	// Create a new text element
-	newText = document.createTextNode(
-		'Name: ' + employeeInput.name + 
-		', #: ' + employeeInput.employeeNumber +
-		', salary: ' + employeeInput.annualSalary + 
-		', rating: ' + employeeInput.reviewRating +
-		', ' + ' BONUS: ' + bonusInput);
-	// Add employee data to the newElement
-	newElement.appendChild(newText);
-	position.appendChild(newElement);
+	$('#content').append(`
+		<li>
+			Name: ${employee.name}
+			#: ${employee.employeeNumber}
+			salary: ${employee.annualSalary}
+			rating: ${employee.reviewRating}
+			BONUS: ${bonus}
+		</li>
+	`);
 }
