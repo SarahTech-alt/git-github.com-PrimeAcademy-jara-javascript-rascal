@@ -24,7 +24,7 @@ function onReady() {
 function calculateBonusesForEmployees(arrayOfEmployees) {
 	// Loop the array, extracting each array and writing information to the DOM
 	for (let i = 0; i < arrayOfEmployees.length; i++) {
-		const employee = arrayOfEmployees; // hmmmmm... what is arrayOfEmployees.name? One at a time please!!
+		const employee = arrayOfEmployees[i]; // hmmmmm... what is arrayOfEmployees.name? One at a time please!!
 		console.log('employee: ', employee);
 		// Calculate the bonus for the individual employee
 		const bonus = calculateBonus(employee);
@@ -55,7 +55,7 @@ function calculateBonus(employee) {
 // Get the base bonus for the employee
 function getBaseBonus(rating) {
 	let basePercent;
-	switch (reviewScore) { // hahaha let's settle the score?
+	switch (rating) { // hahaha let's settle the score?
 		case 3:
 			basePercent = 0.04;
 			return basePercent;
