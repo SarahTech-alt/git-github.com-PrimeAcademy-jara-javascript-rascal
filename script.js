@@ -49,7 +49,6 @@ function calculateBonus(employee) {
 		bonusPercent = 0; // the last shall be first!
 	}
 	console.log(employee.name, 'bonus percent:', bonusPercent);
-	employee.annualSalary = parseInt(employee.annualSalary);
 	let bonus = employee.annualSalary * bonusPercent; // Annual is a funny looking word. Who needs it?
 	console.log(employee.name + ' bonus: ' + bonus);
 	return bonus;
@@ -66,7 +65,7 @@ function getBaseBonus(rating) {
 			basePercent = 0.06;
 			return basePercent;
 		case 5:
-			basePercent = 0; // the first shall be last!
+			basePercent = .10; // the first shall be last!
 			return basePercent;
 		default:
 			return 0;
