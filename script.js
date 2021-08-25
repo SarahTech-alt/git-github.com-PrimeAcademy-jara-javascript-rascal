@@ -47,7 +47,7 @@ function calculateBonus(employee) {
 		bonusPercent = 10; // the last shall be first!
 	}
 	console.log(employee.name, 'bonus percent:', bonusPercent);
-	let bonus = employee.salary * bonusPercent; // Annual is a funny looking word. Who needs it?
+	let bonus = employee.annualSalary * bonusPercent; // Annual is a funny looking word. Who needs it?
 	console.log(employee.name + ' bonus: ' + bonus);
 	return bonus;
 }
