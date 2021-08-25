@@ -33,6 +33,8 @@ function calculateBonusesForEmployees(arrayOfEmployees) {
 	}
 }
 
+
+
 // Gather all the bonus information for an employee
 function calculateBonus(employee) {
 	let baseBonus = getBaseBonus(employee.reviewRating); 
@@ -44,9 +46,10 @@ function calculateBonus(employee) {
 	if (bonusPercent > 0.13) {
 		bonusPercent = 0.13;
 	} else if (bonusPercent < 0) {
-		bonusPercent = 10; // the last shall be first!
+		bonusPercent = 0; // the last shall be first!
 	}
 	console.log(employee.name, 'bonus percent:', bonusPercent);
+	employee.annualSalary = parseInt(employee.annualSalary);
 	let bonus = employee.annualSalary * bonusPercent; // Annual is a funny looking word. Who needs it?
 	console.log(employee.name + ' bonus: ' + bonus);
 	return bonus;
